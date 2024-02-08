@@ -365,14 +365,14 @@ AUTOCONF = ${SHELL} /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3/miss
 AUTOHEADER = ${SHELL} /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3/missing autoheader
 AUTOMAKE = ${SHELL} /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3/missing automake-1.16
 AWK = gawk
-CC = gcc
+CC = /opt/programs/openMPI/4.1.5/bin/mpicc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CONVERT_CHECK_PATH = 
-CPP = gcc -E
+CPP = /opt/programs/openMPI/4.1.5/bin/mpicc -E
 CPPFLAGS = 
-CXX = g++
-CXXCPP = g++ -E
+CXX = /opt/programs/openMPI/4.1.5/bin/mpicxx
+CXXCPP = /opt/programs/openMPI/4.1.5/bin/mpicxx -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
@@ -434,7 +434,7 @@ abs_srcdir = /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3/c/mpi/colle
 abs_top_builddir = /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3
 abs_top_srcdir = /u/dssc/aminutolo/HPC/provaOSU/osu-micro-benchmarks-7.3
 ac_ct_AR = ar
-ac_ct_CC = gcc
+ac_ct_CC = /opt/programs/openMPI/4.1.5/bin/mpicc
 ac_ct_CXX = 
 ac_ct_DUMPBIN = 
 am__include = include

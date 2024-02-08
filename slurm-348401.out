@@ -1,0 +1,219 @@
+, 2, 2, 0.16, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98594] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98594] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 4, 0.16, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98622] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98622] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 8, 0.16, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98651] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98651] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 16, 0.16, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98679] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98679] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 32, 0.19, 
+, 2, 64, 0.22, 
+, 2, 128, 0.27, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98768] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98768] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 256, 0.26, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98796] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98796] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 512, 0.31, 
+, 2, 1024, 0.37, 
+, 2, 2048, 0.47, 
+, 2, 4096, 0.74, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98914] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98914] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 8192, 1.19, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:98942] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:98942] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 16384, 2.80, 
+, 2, 32768, 4.60, 
+, 2, 65536, 5.74, 
+, 2, 131072, 8.74, 
+, 2, 262144, 13.67, 
+, 2, 524288, 24.86, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99120] 1 more process has sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99120] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 2, 1048576, 53.86, 
+, 4, 2, 0.28, 
+, 4, 4, 0.32, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99231] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99231] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 8, 0.30, 
+, 4, 16, 0.27, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99307] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99307] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 32, 0.49, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99347] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99347] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 64, 0.49, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99383] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99383] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 128, 0.98, 
+, 4, 256, 1.00, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99459] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99459] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 512, 1.17, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99496] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99496] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 1024, 1.50, 
+, 4, 2048, 2.10, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99573] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99573] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 4096, 3.24, 
+, 4, 8192, 5.05, 
+, 4, 16384, 8.06, 
+, 4, 32768, 12.06, 
+, 4, 65536, 18.11, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99769] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99769] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 131072, 35.56, 
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: fat002
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+[fat002.hpc.rd.areasciencepark.it:99805] 3 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[fat002.hpc.rd.areasciencepark.it:99805] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+, 4, 262144, 74.29, 
+slurmstepd: error: *** JOB 348401 ON fat002 CANCELLED AT 2024-02-07T17:23:51 ***
