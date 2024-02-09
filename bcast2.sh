@@ -9,7 +9,7 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
-echo "Processes,Size,Latency" > output_processes_size_1_new.csv
+echo "Processes,Size,Latency" > output_processes_size_2_new.csv
 
 # Numero di ripetizioni per ottenere una media
 repetitions=10000
@@ -28,6 +28,6 @@ do
 	
 	echo "$processes, $size, $result_bcast"
         # Scrivi i risultati nel file CSV
-        echo "$processes,$size,$result_bcast" >> output_processes_size_1_new.csv
+        echo "$processes,$size,$result_bcast" >> output_processes_size_2_new.csv
     done
 done
