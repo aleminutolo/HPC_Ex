@@ -24,4 +24,4 @@ do
 	echo "$processes, $result_bcast"
         # Scrivi i risultati nel file CSV
         echo "$processes,$size,$result_bcast" >> output_processes_fixed_size_bcast_5_new.csv
- done
+done
