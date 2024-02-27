@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=HPC
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=24
+#SBATCH --ntasks-per-node=128
 #SBATCH --time=02:00:00
-#SBATCH --partition THIN
+#SBATCH --partition EPYC
 #SBATCH --exclusive
 #SBATCH --exclude fat[001-002]
 
@@ -24,4 +24,4 @@ do
 	echo "$processes, $result_bcast"
         # Scrivi i risultati nel file CSV
         echo "$processes,$size,$result_bcast" >> output_processes_fixed_size_bcast_2_new.csv
- done
+done

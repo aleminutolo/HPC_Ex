@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=HPC
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=24
+#SBATCH --ntasks-per-node=128
 #SBATCH --time=02:00:00
-#SBATCH --partition THIN
+#SBATCH --partition EPYC
 #SBATCH --exclusive
 #SBATCH --exclude fat[001-002]
 
