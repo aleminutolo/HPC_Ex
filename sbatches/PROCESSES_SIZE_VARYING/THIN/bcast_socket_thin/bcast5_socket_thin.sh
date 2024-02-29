@@ -9,7 +9,7 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
-echo "Processes,Size,Latency" > output_processes_size_gather_0_new.csv
+echo "Processes,Size,Latency" > bcast5_socket_thin.csv
 
 # Numero di ripetizioni per ottenere una media
 repetitions=10000
@@ -24,10 +24,10 @@ do
         size=$((2**size_power))
 
         # Esegui osu_bcast con numero di processi, dimensione fissa e numero di ripetizioni su due nodi
-        result_bcast=$(mpirun --map-by socket -np $processes --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_gather_algorithm 0 osu_gather -m $size -x $repetitions -i $repetitions | tail -n 1 | awk '{print $2}')
+        result_bcast=$(mpirun --map-by socket -np $processes --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_bcast_algorithm 5 osu_bcast -m $size -x $repetitions -i $repetitions | tail -n 1 | awk '{print $2}')
 	
 	echo "$processes, $size, $result_bcast"
         # Scrivi i risultati nel file CSV
-        echo "$processes,$size,$result_bcast" >> output_processes_size_gather_0_new.csv
+        echo "$processes,$size,$result_bcast" >> bcast5_socket_thin.csv
     done
 done
