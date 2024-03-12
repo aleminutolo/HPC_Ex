@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=HPC
-#SBATCH --nodes=2done
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=24
 #SBATCH --time=02:00:00
 #SBATCH --partition THIN
