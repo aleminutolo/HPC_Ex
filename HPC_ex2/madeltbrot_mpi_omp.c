@@ -19,7 +19,7 @@ short int mandelbrot(double real, double imag, int max_iter) {
 int main(int argc, char *argv[]) {
     int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
-    int max_iterations = 255; // Adjust this if needed, keeping short int's limit in mind
+    int max_iterations = 65535; // Adjust this if needed, keeping short int's limit in mind
     int world_size, world_rank;
 
     MPI_Init(&argc, &argv);
