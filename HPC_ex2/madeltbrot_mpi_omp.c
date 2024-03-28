@@ -3,7 +3,7 @@
 #include <mpi.h>
 #include <omp.h>
 
-short int mandelbrot(double real, double imag, int max_iter) {
+unsigned char mandelbrot(double real, double imag, int max_iter) {
     double z_real = real;
     double z_imag = imag;
     for (int n = 0; n < max_iter; n++) {
@@ -19,7 +19,7 @@ short int mandelbrot(double real, double imag, int max_iter) {
 int main(int argc, char *argv[]) {
     int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
-    int max_iterations = 65535; // Adjust this if needed, keeping short int's limit in mind
+    int max_iterations = 255;
     int world_size, world_rank;
 
     MPI_Init(&argc, &argv);
@@ -40,10 +40,10 @@ int main(int argc, char *argv[]) {
     int start_row = world_rank * rows_per_process;
     int end_row = start_row + rows_per_process;
     if (world_rank == world_size - 1) {
-        end_row += remainder_rows; // Handle remainder rows
+        end_row += remainder_rows;
     }
 
-    short int* part_buffer = (short int*)malloc(width * (end_row - start_row) * sizeof(short int));
+    unsigned char* part_buffer = (unsigned char*)malloc(width * (end_row - start_row) * sizeof(unsigned char));
 
     #pragma omp parallel for schedule(dynamic)
     for (int j = start_row; j < end_row; j++) {
@@ -55,9 +55,9 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    short int* image_buffer = NULL;
+    unsigned char* image_buffer = NULL;
     if (world_rank == 0) {
-        image_buffer = (short int*)malloc(width * height * sizeof(short int));
+        image_buffer = (unsigned char*)malloc(width * height * sizeof(unsigned char));
     }
 
     int* recvcounts = NULL;
@@ -73,25 +73,25 @@ int main(int argc, char *argv[]) {
         recvcounts[world_size - 1] += width * remainder_rows;
     }
 
-    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_SHORT,
-                image_buffer, recvcounts, displs, MPI_SHORT,
+    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR,
+                image_buffer, recvcounts, displs, MPI_UNSIGNED_CHAR,
                 0, MPI_COMM_WORLD);
 
     if (world_rank == 0) {
-        FILE *file = fopen("image.pgm", "w");
-        fprintf(file, "P2\n%d %d\n%d\n", width, height, max_iterations);
+        FILE *file = fopen("mandelbrot.pgm", "w");
+        fprintf(file, "P5\n%d %d\n%d\n", width, height, max_iterations);
         for (int i = 0; i < width * height; i++) {
-            fprintf(file, "%d ", image_buffer[i]);
-            if ((i + 1) % width == 0) fprintf(file, "\n");
+            fwrite(&image_buffer[i], sizeof(unsigned char), 1, file);
         }
         fclose(file);
         free(image_buffer);
         free(recvcounts);
         free(displs);
-        printf("Mandelbrot set generated and saved to 'image.pgm'\n");
+        printf("Mandelbrot set generated and saved to 'mandelbrot.pgm'\n");
     }
 
     free(part_buffer);
     MPI_Finalize();
     return 0;
 }
+
