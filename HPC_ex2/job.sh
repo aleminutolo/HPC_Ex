@@ -7,8 +7,7 @@
 #SBATCH --exclusive
 #SBATCH --exclude fat[001-002]
 
-module load gcc/9.3.0
-module load openmpi/4.0.3
+module load openMPI/4.1.5/gnu/12.2.1
 
 mpirun ./mandelbrot 800 600 -2.0 -1.0 1.0 1.#!/bin/bash
 
