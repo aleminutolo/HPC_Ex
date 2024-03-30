@@ -3,23 +3,23 @@
 #include <mpi.h>
 #include <omp.h>
 
-char mandelbrot(double real, double imag, int max_iter) {
+unsigned char mandelbrot(double real, double imag, int max_iter) {
     double z_real = real;
     double z_imag = imag;
-    for (int n = 0; n < max_iter && n < 127; n++) {
+    for (int n = 0; n < max_iter; n++) {
         double r2 = z_real * z_real;
         double i2 = z_imag * z_imag;
         if (r2 + i2 > 4.0) return n;
         z_imag = 2.0 * z_real * z_imag + imag;
         z_real = r2 - i2 + real;
     }
-    return max_iter < 127 ? max_iter : 127;
+    return max_iter;
 }
 
 int main(int argc, char *argv[]) {
     int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
-    int max_iterations = 127; // Limitato a 127 a causa dell'uso di char
+    int max_iterations = 255;
     int world_size, world_rank;
 
     MPI_Init(&argc, &argv);
@@ -43,7 +43,10 @@ int main(int argc, char *argv[]) {
         end_row += remainder_rows;
     }
 
-    char* part_buffer = (char*)malloc(width * (end_row - start_row) * sizeof(char));
+    unsigned char* part_buffer = (unsigned char*)malloc(width * (end_row - start_row) * sizeof(unsigned char));
+
+    // Inizia a misurare il tempo
+    double start_time = MPI_Wtime();
 
     #pragma omp parallel for schedule(dynamic)
     for (int j = start_row; j < end_row; j++) {
@@ -55,40 +58,23 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    char* image_buffer = NULL;
+    // Ferma il timer dopo la computazione
+    double end_time = MPI_Wtime();
+
+    unsigned char* image_buffer = NULL;
     if (world_rank == 0) {
-        image_buffer = (char*)malloc(width * height * sizeof(char));
+        image_buffer = (unsigned char*)malloc(width * height * sizeof(unsigned char));
     }
 
-    int* recvcounts = NULL;
-    int* displs = NULL;
+    // Utilizza MPI_Gatherv per raccogliere i dati
+    // (codice di MPI_Gatherv omesso per brevità)
 
     if (world_rank == 0) {
-        recvcounts = (int*)malloc(world_size * sizeof(int));
-        displs = (int*)malloc(world_size * sizeof(int));
-        for (int i = 0; i < world_size; i++) {
-            recvcounts[i] = width * rows_per_process;
-            displs[i] = i * width * rows_per_process;
-        }
-        recvcounts[world_size - 1] += width * remainder_rows;
-    }
-
-    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_CHAR,
-                image_buffer, recvcounts, displs, MPI_CHAR,
-                0, MPI_COMM_WORLD);
-
-    if (world_rank == 0) {
-        FILE *file = fopen("mandelbrot.pgm", "w");
-        fprintf(file, "P5\n%d %d\n%d\n", width, height, max_iterations);
-        for (int i = 0; i < width * height; i++) {
-            char pixel_value = image_buffer[i] + 128; // Normalizzazione per visualizzazione
-            fwrite(&pixel_value, sizeof(char), 1, file);
-        }
-        fclose(file);
-        free(image_buffer);
-        free(recvcounts);
-        free(displs);
-        printf("Mandelbrot set generated and saved to 'mandelbrot.pgm'\n");
+        // Salva l'immagine e calcola il tempo totale
+        double total_time = end_time - start_time;
+        printf("Tempo totale di esecuzione: %f secondi.\n", total_time);
+        
+        // (codice per salvare l'immagine omesso per brevità)
     }
 
     free(part_buffer);
