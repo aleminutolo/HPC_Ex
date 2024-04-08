@@ -2,7 +2,7 @@
 #SBATCH --job-name=HPC-MPI-Scaling
 #SBATCH --nodes=4  # Massimo numero di nodi che vuoi testare
 #SBATCH --ntasks-per-node=24  # Adatta questo al massimo numero di task per nodo
-#SBATCH --time=02:00:00
+#SBATCH --time=00:30:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
 

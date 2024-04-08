@@ -3,7 +3,7 @@
 #SBATCH --nodes=1  # Utilizza un singolo nodo
 #SBATCH --ntasks-per-node=1  # Un solo task per nodo
 #SBATCH --cpus-per-task=24  # Massimo numero di thread OMP che vuoi testare
-#SBATCH --time=02:00:00
+#SBATCH --time=00:30:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
 
