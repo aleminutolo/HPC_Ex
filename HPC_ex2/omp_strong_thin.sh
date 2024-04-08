@@ -10,7 +10,7 @@
 module load openMPI/4.1.5/gnu/12.2.1
 
 # Definisci il nome del file CSV per salvare i risultati
-OUTPUT_CSV="execution_times_omp.csv"
+OUTPUT_CSV="omp_strong_thin.csv"
 
 # Inizializza il file CSV con l'intestazione se non esiste
 echo "OMP_NUM_THREADS,Execution_Time" > $OUTPUT_CSV
