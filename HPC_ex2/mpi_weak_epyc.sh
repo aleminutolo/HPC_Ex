@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=HPC-MPI-WeakScaling
-#SBATCH --nodes=4
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=128
 #SBATCH --time=02:00:00
 #SBATCH --partition=EPYC

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=HPC-MPI-Scaling
-#SBATCH --nodes=4  # Massimo numero di nodi che vuoi testare
+#SBATCH --nodes=2  # Massimo numero di nodi che vuoi testare
 #SBATCH --ntasks-per-node=128  # Adatta questo al massimo numero di task per nodo
 #SBATCH --time=02:00:00
 #SBATCH --partition=EPYC
@@ -17,7 +17,7 @@ output_file="mpi_strong_epyc.csv"
 echo "Total Tasks,Execution Time (s)" > $output_file
 
 # Loop attraverso un numero variabile di task MPI totali
-for total_tasks in {2..96..2}; do
+for total_tasks in {2..256..2}; do
     echo "Running with $total_tasks MPI tasks."
     
     # Esegui mpirun e cattura il tempo di esecuzione

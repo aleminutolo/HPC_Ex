@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=128  # Assicurati che questo corrisponda al numero massimo di thread OMP che vuoi testare
 #SBATCH --time=02:00:00
-#SBATCH --partition=THIN
+#SBATCH --partition=EPYC
 #SBATCH --exclusive
 
 module load openMPI/4.1.5/gnu/12.2.1
