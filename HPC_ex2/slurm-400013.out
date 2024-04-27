@@ -1,0 +1,39 @@
+Running with 2 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 4 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 6 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 8 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 10 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 12 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 14 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 16 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 18 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+/var/spool/slurm/d/job400013/slurm_script: line 27: temp_execution_time.txt: No such file or directory
+rm: cannot remove 'temp_execution_time.txt': No such file or directory
+Running with 20 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+slurmstepd: error: *** JOB 400013 ON thin001 CANCELLED AT 2024-04-08T17:49:08 ***

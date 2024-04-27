@@ -1,0 +1,2 @@
+ogni nodo ha 2 socket con 12 core ognuna => 1 nodo = 24 core
+					=> 2 nodi = 48 core
