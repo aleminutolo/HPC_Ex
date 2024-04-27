@@ -17,7 +17,15 @@ unsigned char mandelbrot(double real, double imag, int max_iter) {
 }
 
 int main(int argc, char *argv[]) {
-    MPI_Init(&argc, &argv);
+
+    int mpi_provided_threaD_level;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &mpi_provided_threaD_level);
+    if(mpi_provided_threaD_level < MPI_THREAD_FUNNELED) {
+        printf("The threading support level is lesser than that demanded\n");
+        MPI_Finalize();
+        exit(1)
+    }
+    
 
     double global_start_time = MPI_Wtime(); // Start timing here
 
