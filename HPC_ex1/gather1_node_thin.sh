@@ -9,13 +9,13 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
-echo "Processes,Size,Latency" > gather1_node_thin.csv
+echo "Processes,Size,Latency" > gather1_node_thin_part2.csv
 
 # Numero di ripetizioni per ottenere una media
 repetitions=10000
 
 # Ciclo esterno per il numero di processori
-for processes in {2..48..2}
+for processes in {42..48..2}
 do
     # Ciclo interno per la dimensione del messaggio da 2^1 a 2^20
     for size_power in {1..20}
@@ -28,6 +28,6 @@ do
 
         echo "$processes, $size, $result_bcast"
         # Scrivi i risultati nel file CSV
-        echo "$processes,$size,$result_bcast" >> gather1_node_thin.csv
+        echo "$processes,$size,$result_bcast" >> gather1_node_thin_part2.csv
     done
 done
