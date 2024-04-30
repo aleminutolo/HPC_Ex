@@ -15,7 +15,7 @@ echo "Processes,Size,Latency" > gather3_core_thin_part2.csv
 repetitions=10000
 
 # Ciclo esterno per il numero di processori
-for processes in {34..48..2}
+for processes in {48..48..2}
 do
     # Ciclo interno per la dimensione del messaggio da 2^1 a 2^20
     for size_power in {1..20}
