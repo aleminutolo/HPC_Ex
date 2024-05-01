@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     if(mpi_provided_threaD_level < MPI_THREAD_FUNNELED) {
         printf("The threading support level is lesser than that demanded\n");
         MPI_Finalize();
-        exit(1)
+        exit(1);
     }
     
 

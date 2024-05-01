@@ -1,0 +1,95 @@
+Running with 2 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 4 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 6 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 8 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 10 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 12 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 14 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 16 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 18 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 20 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 22 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 24 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 26 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 28 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 30 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 32 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 34 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 36 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 38 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 40 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 42 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 44 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 46 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 48 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 50 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 52 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 54 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 56 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 58 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 60 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 62 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 64 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 66 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 68 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 70 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 72 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 74 MPI tasks.
+Mandelbrot set generated and saved to 'image.pgm'
+Running with 76 MPI tasks.
+thin005.hpc.rd.areasciencepark.it:rank72.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank75.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank73.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank72.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank74.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank75.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank73.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank74.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+slurmstepd: error: *** JOB 407446 ON thin002 CANCELLED AT 2024-04-28T02:13:03 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[33690,0],0] on node thin002
+  Remote daemon: [[33690,0],3] on node thin005
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

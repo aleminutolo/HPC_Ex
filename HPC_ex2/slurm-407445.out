@@ -1,0 +1,61 @@
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+Mandelbrot set generated and saved to 'image.pgm'
+thin005.hpc.rd.areasciencepark.it:rank76.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank80.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank81.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank77.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank75.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank76.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank78.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank72.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank73.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank80.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank79.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank81.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank77.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank75.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank74.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank72.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank78.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank73.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank79.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+thin005.hpc.rd.areasciencepark.it:rank74.mandelbrot: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+slurmstepd: error: *** JOB 407445 ON thin002 CANCELLED AT 2024-04-28T01:42:32 DUE TO TIME LIMIT ***
