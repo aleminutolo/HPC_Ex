@@ -17,37 +17,36 @@ unsigned char mandelbrot(double real, double imag, int max_iter) {
 }
 
 int main(int argc, char *argv[]) {
-
-    int mpi_provided_threaD_level;
-    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &mpi_provided_threaD_level);
-    if(mpi_provided_threaD_level < MPI_THREAD_FUNNELED) {
+    int mpi_provided_thread_level;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &mpi_provided_thread_level);
+    if (mpi_provided_thread_level < MPI_THREAD_FUNNELED) {
         printf("The threading support level is lesser than that demanded\n");
         MPI_Finalize();
         exit(1);
     }
-    
 
-    double global_start_time = MPI_Wtime(); // Start timing here
+    double global_start_time = MPI_Wtime();
 
     int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
     int max_iterations = 255;
-    int world_size, world_rank;
+    int world_size, world_rank, num_threads;
 
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
-    // Parse arguments
-    if (argc == 7) {
+    if (argc == 9) {
         width = atoi(argv[1]);
         height = atoi(argv[2]);
         x_left = atof(argv[3]);
         y_lower = atof(argv[4]);
         x_right = atof(argv[5]);
         y_upper = atof(argv[6]);
+        max_iterations = atoi(argv[7]);
+        num_threads = atoi(argv[8]);
+        omp_set_num_threads(num_threads);
     }
 
-    // Distribute rows among processes
     int rows_per_process = height / world_size;
     int remainder_rows = height % world_size;
     int start_row = world_rank * rows_per_process;
@@ -65,37 +64,40 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // Gather parts of the Mandelbrot set computed by each process
-    unsigned char* image_buffer = NULL;
+    // Prepare for MPI_Gatherv
+    int *recvcounts = NULL;
+    int *displs = NULL;
+    unsigned char *image_buffer = NULL;
     if (world_rank == 0) {
-        image_buffer = (unsigned char*)malloc(width * height * sizeof(unsigned char));
+        recvcounts = malloc(world_size * sizeof(int));
+        displs = malloc(world_size * sizeof(int));
+        int displacement = 0;
+        for (int i = 0; i < world_size; i++) {
+            recvcounts[i] = width * (rows_per_process + (i == world_size - 1 ? remainder_rows : 0));
+            displs[i] = displacement;
+            displacement += recvcounts[i];
+        }
+        image_buffer = (unsigned char*)malloc(displacement * sizeof(unsigned char));
     }
 
-    MPI_Gather(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR, image_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
-
-    if (world_rank == 0) {
-        FILE *file = fopen("image.pgm", "w");
-        fprintf(file, "P5\n%d %d\n255\n", width, height);
-        fwrite(image_buffer, sizeof(unsigned char), width * height, file);
-        fclose(file);
-        printf("Mandelbrot set generated and saved to 'image.pgm'\n");
-        free(image_buffer);
-    }
-
+    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR,
+                image_buffer, recvcounts, displs, MPI_UNSIGNED_CHAR,
+                0, MPI_COMM_WORLD);
     free(part_buffer);
 
-    double global_end_time = MPI_Wtime(); // End timing here
-	
-    // Alla fine del main, prima di MPI_Finalize
-if (world_rank == 0) {
-    FILE *temp_file = fopen("temp_execution_time.txt", "w");
-    if (temp_file != NULL) {
-        fprintf(temp_file, "%f", global_end_time - global_start_time);
-        fclose(temp_file);
-    } else {
-        printf("ERROR OPENING FILE\n");
+    if (world_rank == 0) {
+        // Root process final operations here
+        free(image_buffer);
+        free(recvcounts);
+        free(displs);
     }
-}
+
+    double global_end_time = MPI_Wtime();
+    if (world_rank == 0) {
+        printf("%f", global_end_time - global_start_time);
+    }
+
     MPI_Finalize();
     return 0;
 }
+

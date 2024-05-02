@@ -1,38 +1,49 @@
 Total Tasks,Execution Time (s)
-2,0.138549
-4,0.102873
-6,0.079337
-8,0.064617
-10,0.067875
-12,0.064899
-14,0.059992
-16,0.043695
-18,0.034188
-20,0.034098
-22,0.033976
-24,0.027359
-26,0.048797
-28,0.054283
-30,0.053122
-32,0.058223
-34,0.058637
-36,0.068813
-38,0.075174
-40,0.058090
-42,0.055916
-44,0.066152
-46,0.056945
-48,0.051171
-50,0.056338
-52,0.054509
-54,0.063916
-56,0.074911
-58,0.075085
-60,0.052005
-62,0.027782
-64,0.024365
-66,0.029839
-68,0.023477
-70,0.026608
-72,0.020540
-74,0.022261
+1,Elapsed time: 1.891471 seconds
+2,Elapsed time: 0.947109 seconds
+3,Elapsed time: 1.137060 seconds
+4,Elapsed time: 0.763240 seconds
+5,Elapsed time: 0.751612 seconds
+6,Elapsed time: 0.573550 seconds
+7,Elapsed time: 0.546119 seconds
+8,Elapsed time: 0.460619 seconds
+9,Elapsed time: 0.449234 seconds
+10,Elapsed time: 0.374698 seconds
+11,Elapsed time: 0.351154 seconds
+12,Elapsed time: 0.315688 seconds
+13,Elapsed time: 0.299945 seconds
+14,Elapsed time: 0.308596 seconds
+15,Elapsed time: 0.260908 seconds
+16,Elapsed time: 0.240661 seconds
+17,Elapsed time: 0.247267 seconds
+18,Elapsed time: 0.214795 seconds
+19,Elapsed time: 0.208705 seconds
+20,Elapsed time: 0.194607 seconds
+21,Elapsed time: 0.189120 seconds
+22,Elapsed time: 0.177506 seconds
+23,Elapsed time: 0.167144 seconds
+24,Elapsed time: 0.163835 seconds
+25,Elapsed time: 0.160246 seconds
+26,Elapsed time: 0.167033 seconds
+27,Elapsed time: 0.177670 seconds
+28,Elapsed time: 0.151209 seconds
+29,Elapsed time: 0.138236 seconds
+30,Elapsed time: 0.132648 seconds
+31,Elapsed time: 0.128503 seconds
+32,Elapsed time: 0.124711 seconds
+33,Elapsed time: 0.120793 seconds
+34,Elapsed time: 0.124887 seconds
+35,Elapsed time: 0.125482 seconds
+36,Elapsed time: 0.123837 seconds
+37,Elapsed time: 0.108513 seconds
+38,Elapsed time: 0.105881 seconds
+39,Elapsed time: 0.121883 seconds
+40,Elapsed time: 0.130333 seconds
+41,Elapsed time: 0.112771 seconds
+42,Elapsed time: 0.110472 seconds
+43,Elapsed time: 0.103295 seconds
+44,Elapsed time: 0.111744 seconds
+45,Elapsed time: 0.103206 seconds
+46,Elapsed time: 0.109778 seconds
+47,Elapsed time: 0.104166 seconds
+48,Elapsed time: 0.107766 seconds

@@ -1,0 +1,20 @@
+Running with 1 MPI tasks.
+Running with 2 MPI tasks.
+Running with 3 MPI tasks.
+[fat001:1849633] *** An error occurred in MPI_Gather
+[fat001:1849633] *** reported by process [621412353,0]
+[fat001:1849633] *** on communicator MPI_COMM_WORLD
+[fat001:1849633] *** MPI_ERR_TRUNCATE: message truncated
+[fat001:1849633] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[fat001:1849633] ***    and potentially your MPI job)
+Running with 4 MPI tasks.
+Running with 5 MPI tasks.
+Running with 6 MPI tasks.
+[fat001:1849702] *** An error occurred in MPI_Gather
+[fat001:1849702] *** reported by process [625016833,0]
+[fat001:1849702] *** on communicator MPI_COMM_WORLD
+[fat001:1849702] *** MPI_ERR_TRUNCATE: message truncated
+[fat001:1849702] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[fat001:1849702] ***    and potentially your MPI job)
+Running with 7 MPI tasks.
+slurmstepd: error: *** JOB 411414 ON fat001 CANCELLED AT 2024-05-02T17:11:47 ***

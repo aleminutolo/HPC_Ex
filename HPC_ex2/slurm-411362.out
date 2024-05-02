@@ -1,0 +1,82 @@
+Running with 1 MPI tasks.
+Running with 2 MPI tasks.
+Running with 3 MPI tasks.
+[thin003:37834] *** An error occurred in MPI_Gather
+[thin003:37834] *** reported by process [290193409,0]
+[thin003:37834] *** on communicator MPI_COMM_WORLD
+[thin003:37834] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:37834] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:37834] ***    and potentially your MPI job)
+Running with 4 MPI tasks.
+Running with 5 MPI tasks.
+Running with 6 MPI tasks.
+[thin003:37927] *** An error occurred in MPI_Gather
+[thin003:37927] *** reported by process [378601473,0]
+[thin003:37927] *** on communicator MPI_COMM_WORLD
+[thin003:37927] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:37927] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:37927] ***    and potentially your MPI job)
+Running with 7 MPI tasks.
+[thin003:37968] *** An error occurred in MPI_Gather
+[thin003:37968] *** reported by process [382337025,0]
+[thin003:37968] *** on communicator MPI_COMM_WORLD
+[thin003:37968] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:37968] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:37968] ***    and potentially your MPI job)
+Running with 8 MPI tasks.
+Running with 9 MPI tasks.
+[thin003:38065] *** An error occurred in MPI_Gather
+[thin003:38065] *** reported by process [371916801,0]
+[thin003:38065] *** on communicator MPI_COMM_WORLD
+[thin003:38065] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:38065] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:38065] ***    and potentially your MPI job)
+Running with 10 MPI tasks.
+Running with 11 MPI tasks.
+Running with 12 MPI tasks.
+Running with 13 MPI tasks.
+Running with 14 MPI tasks.
+Running with 15 MPI tasks.
+Running with 16 MPI tasks.
+Running with 17 MPI tasks.
+[thin003:38657] *** An error occurred in MPI_Gather
+[thin003:38657] *** reported by process [343605249,0]
+[thin003:38657] *** on communicator MPI_COMM_WORLD
+[thin003:38657] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:38657] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:38657] ***    and potentially your MPI job)
+Running with 18 MPI tasks.
+Running with 19 MPI tasks.
+Running with 20 MPI tasks.
+Running with 21 MPI tasks.
+Running with 22 MPI tasks.
+Running with 23 MPI tasks.
+Running with 24 MPI tasks.
+Running with 25 MPI tasks.
+Running with 26 MPI tasks.
+Running with 27 MPI tasks.
+Running with 28 MPI tasks.
+Running with 29 MPI tasks.
+Running with 30 MPI tasks.
+Running with 31 MPI tasks.
+Running with 32 MPI tasks.
+Running with 33 MPI tasks.
+[thin003:40621] *** An error occurred in MPI_Gather
+[thin003:40621] *** reported by process [472842241,0]
+[thin003:40621] *** on communicator MPI_COMM_WORLD
+[thin003:40621] *** MPI_ERR_TRUNCATE: message truncated
+[thin003:40621] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[thin003:40621] ***    and potentially your MPI job)
+Running with 34 MPI tasks.
+Running with 35 MPI tasks.
+Running with 36 MPI tasks.
+Running with 37 MPI tasks.
+Running with 38 MPI tasks.
+Running with 39 MPI tasks.
+Running with 40 MPI tasks.
+Running with 41 MPI tasks.
+Running with 42 MPI tasks.
+Running with 43 MPI tasks.
+Running with 44 MPI tasks.
+Running with 45 MPI tasks.
+slurmstepd: error: *** JOB 411362 ON thin003 CANCELLED AT 2024-05-02T16:56:03 ***
